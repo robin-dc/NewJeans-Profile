@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+header{
+    background-color: white;
+    position:fixed;
+    width:100vw;
+}
+.nav1{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    width:100vw;
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    gap:4rem;
+    height:100%;
+}
+li{
+    font-weight: 600;
+}
+.nav2{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 3rem;
+    color:white;
+}
+nav img{
+    width:7rem;
+    margin-right: 4rem;
+}
+main{
+    background-image: url(nj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20%;
+    background-position-x: center;
+    height:100vh;
+    display:grid;
+    place-items: center;
+    width: 100vw;
+}
+.container{
+    height:500px;
+    margin-top: 9rem;
+    width:600px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+button{
+    width:5rem;
+    height:5rem;
+    position: absolute;
+    bottom:0;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color:white;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: none;
+}
+.plus{
+    right:0;
+}
+.minus{
+    left:0;
+}
+.music{
+    background-image: url(btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:3rem;
+    height:3rem;
+    position: absolute;
+    top:1.2rem;
+    right:2rem;
+    font-size: 1rem;
+    color:black;
+    font-weight: 900;
+    box-shadow: 0 10px 32px 0 rgba(31, 38, 135, 0.507);
+}
+.music.active{
+    animation: rotate 2s linear infinite reverse;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.photo{
+    width:15rem;
+    height:15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border:4px solid white;
+    margin-bottom: 3rem;
+}
+.container p{
+    color:white;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+    font-size: 2rem;
+}
+.container div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
